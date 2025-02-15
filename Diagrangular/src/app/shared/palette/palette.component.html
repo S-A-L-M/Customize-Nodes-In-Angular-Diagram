@@ -6,7 +6,159 @@
 
     <div style="flex: 1; height: 100%;">
         <ejs-diagram #diagram id="diagram" width="100%" height="100%">
-        </ejs-diagram>
+            <e-nodes>
+                <!-- Nodo Central -->
+                <e-node id="centralNode" [offsetX]="500" [offsetY]="300" [height]="150" [width]="250" [style]="centralNodeStyle" [shape]="historiaShape">
+                    <e-node-annotations>
+                        <e-node-annotation content="Universidad de la Costa" [style]="annotationStyle">
+                            <!-- Aplica el estilo aquí -->
+                        </e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
 
+                <!-- Nodos Secundarios -->
+                <e-node id="node1" [offsetX]="300" [offsetY]="150" [height]="100" [width]="200" [style]="secondaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="Historia: Fundada en 1970 en Barranquilla, Colombia. Una de las primeras en ofrecer ingenierías en la región Caribe."></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+                <e-node id="node2" [offsetX]="700" [offsetY]="150" [height]="100" [width]="200" [style]="secondaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="Características: Investigación aplicada, programas actualizados, infraestructura moderna. Cuenta con laboratorios de última generación."></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+                <e-node id="node3" [offsetX]="300" [offsetY]="300" [height]="100" [width]="200" [style]="secondaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="Misión: Formar profesionales integrales con valores éticos y responsabilidad social. Más de 50,000 graduados en 50 años."></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+                <e-node id="node4" [offsetX]="700" [offsetY]="300" [height]="100" [width]="200" [style]="secondaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="Visión: Ser líder en innovación, investigación y compromiso social. Reconocida por proyectos en energías renovables."></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+                <e-node id="node5" [offsetX]="300" [offsetY]="450" [height]="100" [width]="200" [style]="secondaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="Historia del programa: Creado para responder a la demanda de profesionales en tecnología. Uno de los primeros en Colombia en incluir IA."></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+                <e-node id="node6" [offsetX]="500" [offsetY]="450" [height]="100" [width]="200" [style]="secondaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="Misión del programa: Formar ingenieros capaces de diseñar soluciones tecnológicas innovadoras. Estudiantes ganadores de premios nacionales."></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+                <e-node id="node7" [offsetX]="700" [offsetY]="450" [height]="100" [width]="200" [style]="secondaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="Visión del programa: Ser referente nacional en la formación de ingenieros de sistemas. Alianzas con Microsoft y Google."></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+
+                <!-- Nodos adicionales para Visión -->
+                <e-node id="node8" [offsetX]="800" [offsetY]="250" [height]="100" [width]="200" [style]="tertiaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="Proyectos destacados: Energías renovables, IA aplicada a la agricultura, responsabilidad social."></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+
+                <!-- Nodos adicionales para Visión del Programa -->
+                <e-node id="node9" [offsetX]="1000" [offsetY]="400" [height]="100" [width]="200" [style]="tertiaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="Logros destacados: Aplicaciones móviles premiadas, colaboraciones con Microsoft y Google, investigación en IA y big data."></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+
+                <e-node id="node10" [offsetX]="1200" [offsetY]="400" [height]="100" [width]="200" [style]="tertiaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="La Universidad de la Costa ha sido pionera en en una herramientas innovadora en sus programas académicos"></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+
+                <e-node id="node11" [offsetX]="1400" [offsetY]="400" [height]="100" [width]="200" [style]="cuartiaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="• Usando Inteligencia artificial, adaptándose a las demandas del mercado
+                        •formando profesionales altamente capacitados en tecnología"></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+
+                <e-node id="node12" [offsetX]="1600" [offsetY]="100" [height]="100" [width]="200" [style]="cuartiaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="•Formación de ingenieros innovadores en el diseño de soluciones tecnológicas."></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+
+                <e-node id="node13" [offsetX]="1800" [offsetY]="-300" [height]="100" [width]="200" [style]="cuartiaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="Estudiantes premiados a nivel nacional por sus logros en tecnología."></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+
+                <e-node id="node14" [offsetX]="800" [offsetY]="50" [height]="100" [width]="200" [style]="cuartiaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="ha desarrollado proyectos de investigación aplicada en áreas como inteligencia artificial y energías renovables."></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+
+                <e-node id="node15" [offsetX]="800" [offsetY]="-400" [height]="100" [width]="200" [style]="cuartiaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="Cuenta con laboratorios de última generación, incluyendo espacios especializados en robótica, simulación y computación avanzada."></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+
+                <e-node id="node16" [offsetX]="800" [offsetY]="-200" [height]="100" [width]="200" [style]="cuartiaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="Más de 50,000 graduados en sus 50 años de trayectoria, contribuyendo al desarrollo profesional en diversas áreas."></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+
+                <e-node id="node17" [offsetX]="800" [offsetY]="-600" [height]="100" [width]="200" [style]="cuartiaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="Compromiso con la ética y la responsabilidad social, formando profesionales con impacto en la comunidad."></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+
+                <e-node id="node18" [offsetX]="800" [offsetY]="200" [height]="100" [width]="200" [style]="cuartiaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="Ha obtenido reconocimiento a nivel nacional por la calidad de sus programas y su contribución a la investigación."></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+
+                <e-node id="node19" [offsetX]="800" [offsetY]="-800" [height]="100" [width]="200" [style]="cuartiaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="Fue una de las primeras en ofrecer programas de ingeniería en la región Caribe, impulsando el desarrollo tecnológico."></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+
+                <e-node id="node20" [offsetX]="800" [offsetY]="400" [height]="100" [width]="200" [style]="cuartiaryNodeStyle">
+                    <e-node-annotations>
+                        <e-node-annotation content="Desde 1970, ha crecido significativamente, ampliando su oferta académica y su impacto en la educación superior."></e-node-annotation>
+                    </e-node-annotations>
+                </e-node>
+
+            </e-nodes>
+
+            <!-- Conectores -->
+            <e-connectors>
+                <e-connector id="connector1" sourceID="centralNode" targetID="node1" [type]="'Straight'"></e-connector>
+                <e-connector id="connector2" sourceID="centralNode" targetID="node2" [type]="'Straight'"></e-connector>
+                <e-connector id="connector3" sourceID="centralNode" targetID="node3" [type]="'Straight'"></e-connector>
+                <e-connector id="connector4" sourceID="centralNode" targetID="node4" [type]="'Straight'"></e-connector>
+                <e-connector id="connector5" sourceID="centralNode" targetID="node5" [type]="'Straight'"></e-connector>
+                <e-connector id="connector6" sourceID="centralNode" targetID="node6" [type]="'Straight'"></e-connector>
+                <e-connector id="connector7" sourceID="centralNode" targetID="node7" [type]="'Straight'"></e-connector>
+                <e-connector id="connector8" sourceID="node4" targetID="node8" [type]="'Straight'"></e-connector>
+                <e-connector id="connector9" sourceID="node7" targetID="node9" [type]="'Straight'"></e-connector>
+                <e-connector id="connector10" sourceID="node5" targetID="node10" [type]="'Straight'"></e-connector>
+                <e-connector id="connector11" sourceID="node10" targetID="node11" [type]="'Straight'"></e-connector>
+                <e-connector id="connector12" sourceID="node6" targetID="node12" [type]="'Straight'"></e-connector>
+                <e-connector id="connector13" sourceID="node6" targetID="node13" [type]="'Straight'"></e-connector>
+                <e-connector id="connector14" sourceID="node2" targetID="node14" [type]="'Straight'"></e-connector>
+                <e-connector id="connector15" sourceID="node2" targetID="node15" [type]="'Straight'"></e-connector>
+                <e-connector id="connector16" sourceID="node3" targetID="node16" [type]="'Straight'"></e-connector>
+                <e-connector id="connector17" sourceID="node3" targetID="node17" [type]="'Straight'"></e-connector>
+                <e-connector id="connector18" sourceID="node1" targetID="node18" [type]="'Straight'"></e-connector>
+                <e-connector id="connector19" sourceID="node1" targetID="node19" [type]="'Straight'"></e-connector>
+                <e-connector id="connector20" sourceID="node1" targetID="node20" [type]="'Straight'"></e-connector>
+            </e-connectors>
+        </ejs-diagram>
     </div>
 </div>

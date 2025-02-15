@@ -23,7 +23,7 @@ import { ColorPickerModule } from '@syncfusion/ej2-angular-inputs';
     ButtonModule,
     FabModule,
     SpeedDialModule,
-    ColorPickerModule
+    ColorPickerModule,
     
   ],
   exports: [
