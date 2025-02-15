@@ -1,0 +1,35 @@
+.control-section {
+    width: 100%;
+    height: 100%;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.palette-section {
+    width: 280px;
+    /* Puedes ajustar este ancho según necesites */
+    height: 100%;
+}
+
+.diagram-section {
+    flex: 1;
+    height: 100%;
+}
+
+
+/* Estilos para hacer que los elementos dentro de la paleta estén verticales */
+
+ :host ::ng-deep .e-symbolpalette .e-palette-item-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+ :host ::ng-deep .e-symbolpalette .e-palette-item {
+    margin-bottom: 10px;
+}
